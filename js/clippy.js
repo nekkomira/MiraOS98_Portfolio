@@ -217,7 +217,7 @@ function initClippy() {
       clippyTipIdx = (clippyTipIdx + 1) % CLIPPY_TIPS.length;
       clippyTypeBubble(CLIPPY_TIPS[clippyTipIdx]);
     }
-  }, 8000);
+  }, 20000);
 
   setTimeout(() => clippyTypeBubble(CLIPPY_TIPS[0]), 1200);
 }
@@ -236,7 +236,7 @@ function clippyTypeBubble(text) {
     bubble.textContent += text[i];
     i++;
     if (i >= text.length) clearInterval(clippyTypingInterval);
-  }, 18);
+  }, 30);
 }
 
 function clippyAsk() {
