@@ -360,7 +360,18 @@
   </div>
   <div class="clippy-body">
     <div class="clippy-top">
-      <img class="clippy-sprite" src="assets/clippy.svg" alt="Clippy" onclick="clippyTypeBubble(CLIPPY_TIPS[Math.floor(Math.random()*CLIPPY_TIPS.length)])">
+      <svg class="clippy-sprite" onclick="clippyTypeBubble(CLIPPY_TIPS[Math.floor(Math.random()*CLIPPY_TIPS.length)])" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" style="cursor:pointer;flex-shrink:0;">
+          <ellipse cx="32" cy="38" rx="12" ry="18" fill="#c8a832" stroke="#8a6800" stroke-width="2"/>
+          <ellipse cx="32" cy="34" rx="7" ry="11" fill="#e8c840" stroke="#8a6800" stroke-width="1.5"/>
+          <path d="M26 22 Q20 10 32 8 Q44 6 44 20 Q44 28 38 30" fill="none" stroke="#c8a832" stroke-width="4" stroke-linecap="round"/>
+          <path d="M26 22 Q21 12 32 10 Q43 8 43 21 Q43 27 38 30" fill="none" stroke="#e8c840" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="28" cy="36" rx="2" ry="2.5" fill="#fff"/>
+          <ellipse cx="36" cy="36" rx="2" ry="2.5" fill="#fff"/>
+          <circle cx="28.5" cy="36.5" r="1" fill="#222"/>
+          <circle cx="36.5" cy="36.5" r="1" fill="#222"/>
+          <path d="M28 42 Q32 46 36 42" fill="none" stroke="#8a6800" stroke-width="1.5" stroke-linecap="round"/>
+          <ellipse cx="38" cy="24" rx="2" ry="3" fill="rgba(255,255,255,0.4)" transform="rotate(-20,38,24)"/>
+        </svg>
       <div class="clippy-bubble"><span id="clippy-bubble-text">Loading...</span></div>
     </div>
     <div class="clippy-history" id="clippy-history"></div>
