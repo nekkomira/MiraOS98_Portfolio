@@ -35,6 +35,7 @@
     <div class="d-icon" ondblclick="openWin('cd')"><div class="ico">💿</div><span>CD Player</span></div>
     <div class="d-icon" ondblclick="openWin('notepad')"><div class="ico">📝</div><span>Cover Letter</span></div>
     <div class="d-icon" ondblclick="openWin('paint')"><div class="ico">🖌️</div><span>mira.png</span></div>
+    <div class="d-icon" ondblclick="openWin('clippy')"><div class="ico">📎</div><span>Clippy</span></div>
     <div class="d-icon" ondblclick="showError()"><div class="ico">🗑️</div><span>Recycle Bin</span></div>
   </div>
 
@@ -347,6 +348,33 @@
     </div>
   </div>
 
+  <!-- Clippy window -->
+<div class="win win-clippy" id="win-clippy" data-win="clippy" style="display:none;">
+  <div class="win-titlebar" onmousedown="startDrag(event,'win-clippy')">
+    <div class="win-title-left"><span class="title">Clippy — Portfolio Assistant</span></div>
+    <div class="win-btns">
+      <div class="win-btn" onclick="minimizeWin('clippy')">_</div>
+      <div class="win-btn">□</div>
+      <div class="win-btn" onclick="closeWin('clippy')">✕</div>
+    </div>
+  </div>
+  <div class="clippy-body">
+    <div class="clippy-top">
+      <img class="clippy-sprite" src="assets/clippy.svg" alt="Clippy" onclick="clippyTypeBubble(CLIPPY_TIPS[Math.floor(Math.random()*CLIPPY_TIPS.length)])">
+      <div class="clippy-bubble"><span id="clippy-bubble-text">Loading...</span></div>
+    </div>
+    <div class="clippy-history" id="clippy-history"></div>
+    <div class="clippy-input-row">
+      <input class="clippy-input" id="clippy-input" type="text" placeholder="Ask me about Mira..." onkeydown="clippyKeydown(event)" autocomplete="off">
+      <div class="clippy-ask-btn" onclick="clippyAsk()">Ask</div>
+    </div>
+  </div>
+  <div class="win-statusbar">
+    <span class="stat-cell">Clippy v1.0</span>
+    <span class="stat-cell">Powered by portfolio knowledge</span>
+  </div>
+</div>
+
   <!-- Error dialog -->
   <div class="win win-error" id="win-error">
     <div class="win-titlebar" style="background:linear-gradient(to right,#800000,#c00000);">
@@ -385,10 +413,12 @@
     <div class="start-item" onclick="openWin('notepad');closeStart()"><span class="s-ico">📝</span> Cover Letter</div>
     <div class="start-item" onclick="openWin('cd');closeStart()"><span class="s-ico">💿</span> CD Player</div>
     <div class="start-item" onclick="openWin('paint');closeStart()"><span class="s-ico">🖌️</span> Paint</div>
+    <div class="start-item" onclick="openWin('clippy');closeStart()"><span class="s-ico">📎</span> Clippy</div>
     <div class="start-separator"></div>
     <div class="start-item" onclick="showError('shutdown');closeStart()"><span class="s-ico">🔌</span> Shut Down...</div>
   </div>
 </div>
 </body>
 <script src="js/main.js"></script>
+<script src="js/clippy.js"></script>
 </html>

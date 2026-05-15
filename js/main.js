@@ -275,6 +275,7 @@ const wins = {
   sticky:     { el: 'win-sticky',      label: 'Meet the Dev',   open: true,  minimized: false },
   projdetail: { el: 'win-proj-detail', label: 'Project',        open: false, minimized: false },
   paint:      { el: 'win-paint',       label: 'Paint — mira.png', open: false, minimized: false },
+  clippy:     { el: 'win-clippy', label: 'Clippy Assistant', open: false, minimized: false },
 };
 
 let zTop = 10, activeWin = null;
@@ -615,6 +616,7 @@ function bootStep() {
       document.getElementById('boot').style.opacity = '0';
       setTimeout(() => document.getElementById('boot').style.display = 'none', 500);
       updateTaskbar();
+      setTimeout(initClippy, 800);
     }, 500);
   }
 }
