@@ -224,7 +224,11 @@ function initClippy() {
 
 function clippyTypeBubble(text) {
   const bubble = document.getElementById('clippy-bubble-text');
-  if (!bubble) return;
+  if (!bubble) {
+    setTimeout(() => clippyTypeBubble(text), 300);
+    return;
+  }
+
   clearInterval(clippyTypingInterval);
   bubble.textContent = '';
   let i = 0;
