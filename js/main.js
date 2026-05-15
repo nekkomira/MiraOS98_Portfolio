@@ -266,16 +266,16 @@ const projectData = {
 
 // ─── Window registry ─────────────────────────────────────────────────────────
 const wins = {
-  about:      { el: 'win-about',       label: 'About Mira',   open: true,  minimized: false },
+  about:      { el: 'win-about',       label: 'About Mira',    open: true,  minimized: false },
   skills:     { el: 'win-skills',      label: 'Skills.exe',    open: true,  minimized: false },
-  projects:   { el: 'win-projects',    label: 'Projects',       open: true,  minimized: false },
-  notepad:    { el: 'win-notepad',     label: 'Cover Letter',   open: true,  minimized: false },
-  cd:         { el: 'win-cd',          label: 'CD Player',      open: false,  minimized: false },
-  contact:    { el: 'win-contact',     label: 'Contact',        open: true,  minimized: false },
-  sticky:     { el: 'win-sticky',      label: 'Meet the Dev',   open: true,  minimized: false },
-  projdetail: { el: 'win-proj-detail', label: 'Project',        open: false, minimized: false },
+  projects:   { el: 'win-projects',    label: 'Projects',      open: true,  minimized: false },
+  notepad:    { el: 'win-notepad',     label: 'Cover Letter',  open: true,  minimized: false },
+  cd:         { el: 'win-cd',          label: 'CD Player',     open: false, minimized: false },
+  contact:    { el: 'win-contact',     label: 'Contact',       open: true,  minimized: false },
+  sticky:     { el: 'win-sticky',      label: 'Meet the Dev',  open: false, minimized: false },
+  projdetail: { el: 'win-proj-detail', label: 'Project',       open: false, minimized: false },
   paint:      { el: 'win-paint',       label: 'Paint — mira.png', open: false, minimized: false },
-  clippy:     { el: 'win-clippy', label: 'Clippy Assistant', open: false, minimized: false },
+  clippy:     { el: 'win-clippy',      label: 'Clippy Assistant', open: false, minimized: false },
 };
 
 let zTop = 10, activeWin = null;
