@@ -114,33 +114,33 @@
             <td>📄 ASPIRE — AI Interview Coach</td>
             <td>AI / Full-Stack</td>
             <td>React, FastAPI, PyTorch, Firebase</td>
-            <td class="award">[*] Distinction</td>
+            <td class="award">Distinction</td>
             <td>Capstone</td>
           </tr>
           <tr onclick="openProject('gis')" title="Double-click to open">
-            <td>[ ] Scunt Mapper &mdash; C++ GIS Software</td>
+            <td>📄 Scunt Mapper &mdash; C++ GIS Software</td>
             <td>C++ / Geospatial</td>
             <td>C++, OpenStreetMap, Dijkstra, Sim. Annealing</td>
-            <td class="award">[1st] Top 4 / 90</td>
+            <td class="award"> Top 4 / 90</td>
             <td>Large</td>
           </tr>
 
           <tr onclick="openProject('toxicity')" title="Double-click to open">
-            <td>[ ] ML Toxicity Predictor — Brain Scans</td>
+            <td>📄 ML Toxicity Predictor — Brain Scans</td>
             <td>Deep Learning</td>
             <td>Python, PyTorch, CNN/ANN, SVM, Random Forest</td>
             <td>—</td>
             <td>Medium</td>
           </tr>
           <tr onclick="openProject('ops')" title="Double-click to open">
-            <td>[ ] Ontario Public Service — Internships</td>
+            <td>📄 Ontario Public Service — Internships</td>
             <td>Software / Gov Tech</td>
             <td>Azure ADF, Databricks, Power BI, Python, Selenium</td>
             <td>—</td>
             <td>Enterprise</td>
           </tr>
           <tr onclick="openProject('smartsearch')" title="Double-click to open">
-            <td>[ ] SmartSearch AI — RAG Application</td>
+            <td>📄 SmartSearch AI — RAG Application</td>
             <td>GenAI / Full-Stack</td>
             <td>FastAPI, ChromaDB, AWS Bedrock, LLaMA 3, Docker</td>
             <td>—</td>
@@ -233,7 +233,7 @@
     <div class="win-statusbar"><span class="stat-cell" id="cd-status">Ready</span><span class="stat-cell" id="cd-count">Track 1 / 5</span></div>
   </div>
 
-  <!-- Contact window -->
+<!-- Contact window -->
   <div class="win win-contact" id="win-contact" data-win="contact">
     <div class="win-titlebar" onmousedown="startDrag(event,'win-contact')">
       <div class="win-title-left"><span class="ico">📧</span><span class="title">Contact — Outlook</span></div>
@@ -254,6 +254,7 @@
         <span><div style="font-size:10px;color:#444;margin-bottom:2px;">LinkedIn</div><a class="contact-link" href="https://www.linkedin.com/in/namirakamal" target="_blank">linkedin.com/in/Namira</a></span>
       </div>
       <div class="contact-row">
+        <span class="contact-icon">🐙</span>
         <span><div style="font-size:10px;color:#444;margin-bottom:2px;">GitHub</div><a class="contact-link" target="_blank">WIP</a></span>
       </div>
       <div class="contact-row">
@@ -262,12 +263,19 @@
       </div>
       <div style="margin-top:8px;padding-top:6px;border-top:1px solid #aaa;">
         <div style="font-size:11px;color:#444;margin-bottom:4px;">Download resume:</div>
-        <div class="cd-btn" style="display:inline-block;" onclick="showError('resume')">📄 Resume.pdf</div>
+        <div style="display:flex;gap:4px;">
+          <a href="assets/resume.pdf" target="_blank" style="text-decoration:none;">
+            <div class="cd-btn" style="display:inline-block;">📄 View</div>
+          </a>
+          <a href="assets/resume.pdf" download="Namira_Kamal_Resume.pdf" style="text-decoration:none;">
+            <div class="cd-btn" style="display:inline-block;">⬇ Download</div>
+          </a>
+        </div>
       </div>
     </div>
     <div class="win-statusbar"><span class="stat-cell">Open to opportunities</span></div>
   </div>
-
+  
   <!-- Sticky note -->
   <div class="win win-sticky" id="win-sticky" data-win="sticky">
     <div class="win-titlebar" onmousedown="startDrag(event,'win-sticky')">
@@ -288,9 +296,10 @@
       <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Avatar: The Last Airbender</div>
       <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Perfect Crown</div>
       <div class="sticky-item" style="margin-top:4px;"><span class="sticky-check">☑</span> <strong> Hobbies:</strong></div>
-       <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Journaling</div>
+      <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Journaling</div>
       <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Snowboarding</div>
-      <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">Reading–</span> </div>
+      <div class="sticky-item" style="padding-left:16px;"><span class="sticky-check">–</span> Reading</div>
+
 
 
 

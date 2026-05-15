@@ -270,7 +270,7 @@ const wins = {
   skills:     { el: 'win-skills',      label: 'Skills.exe',    open: true,  minimized: false },
   projects:   { el: 'win-projects',    label: 'Projects',       open: true,  minimized: false },
   notepad:    { el: 'win-notepad',     label: 'Cover Letter',   open: true,  minimized: false },
-  cd:         { el: 'win-cd',          label: 'CD Player',      open: true,  minimized: false },
+  cd:         { el: 'win-cd',          label: 'CD Player',      open: false,  minimized: false },
   contact:    { el: 'win-contact',     label: 'Contact',        open: true,  minimized: false },
   sticky:     { el: 'win-sticky',      label: 'Meet the Dev',   open: true,  minimized: false },
   projdetail: { el: 'win-proj-detail', label: 'Project',        open: false, minimized: false },

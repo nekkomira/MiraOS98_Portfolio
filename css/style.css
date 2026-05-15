@@ -88,7 +88,7 @@ body {
 .open-badge { color: #000080; font-weight: bold; font-size: 11px; }
 
 /* ─── Skills window ─── */
-.win-skills { top: 10px; left: 385px; width: 280px; }
+.win-skills { top: 10px; left: 450px; width: 280px; }
 .skill-row { margin-bottom: 7px; }
 .skill-label { font-size: 11px; margin-bottom: 2px; display: flex; justify-content: space-between; }
 .skill-track {
@@ -100,7 +100,7 @@ body {
 .skill-pct { font-size: 10px; color: #444; }
 
 /* ─── Projects window ─── */
-.win-projects { top: 230px; left: 90px; width: 575px; }
+.win-projects { top: 220px; left: 90px; width: 575px; }
 .proj-table { width: 100%; border-collapse: collapse; font-size: 11px; }
 .proj-table th {
   background: #000080; color: #fff; padding: 3px 6px;
@@ -266,7 +266,7 @@ body {
 }
 
 /* ─── Notepad window ─── */
-.win-notepad { top: 430px; left: 90px; width: 270px; }
+.win-notepad { top: 430px; left: 90px; width: 300px; }
 .notepad-area {
   width: 100%; font-family: 'Courier New', monospace; font-size: 12px;
   background: #fff;
@@ -315,7 +315,7 @@ body {
 }
 
 /* ─── Contact window ─── */
-.win-contact { top: 10px; left: 680px; width: 220px; }
+.win-contact { top: 10px; left: 750px; width: 240px; }
 .contact-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 11px; }
 .contact-icon { font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
 .contact-link { color: #000080; text-decoration: underline; cursor: pointer; word-break: break-all; }
